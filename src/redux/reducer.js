@@ -1,7 +1,8 @@
 import {ADD_FAV, DELETE_FAV} from "./actions";
 
 const initialState = {
-    myFavorites:[]
+    myFavorites:[],
+    allCharacters: []
 }
 function reducerFav(state = initialState, actions) {
     switch(actions.type) {
@@ -15,6 +16,18 @@ function reducerFav(state = initialState, actions) {
             return {
                 ...state,
                 myFavorites: state.myFavorites.filter(char => (char.id !== actions.payload))
+            }
+        }
+        case "FILTER": {
+            return {
+                ...state,
+                myFavorites: [{...state.allCharacters}].filter((element) => element.gender === actions.payload)
+            }
+        }
+        case "ORDER": {
+            return {
+                ...state,
+                myFavorites: [{...state.allCharacters}].sort((elementA, elementB) => actions.payload === "Ascendente" ? elementA.id - elementB.id : elementB.id - elementA.id)
             }
         }
         default:

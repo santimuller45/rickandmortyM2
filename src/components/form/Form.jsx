@@ -27,32 +27,34 @@ export default function Form({login}) {
     }
 
     return (
-        <div className={styles.container}>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="username">Username:</label>
-                <input 
-                id="username"
-                name="username"
-                placeholder="Ingrese usuario" 
-                type="text" 
-                value={userData.username} 
-                onChange={handleInputChange}
-                />
-                <p className={styles.errors}>{errors.username}</p>
-                <br></br>
-                <label htmlFor="password">Password:</label>
-                <input 
-                id="password" 
-                name="password"
-                placeholder="Ingrese contraseña" 
-                type="password" 
-                value={userData.password} 
-                onChange={handleInputChange}
-                />
-                <p className={styles.errors}>{errors.password}</p>
-                <br></br>
-                <button type="submit">LOGIN</button>
-            </form>
-        </div>
+        <>
+            <div className={styles.container}>
+                <form onSubmit={handleSubmit}>
+                    <label htmlFor="username">Username:</label>
+                    <input 
+                    id="username"
+                    name="username"
+                    placeholder="Ingrese usuario" 
+                    type="text" 
+                    value={userData.username} 
+                    onChange={handleInputChange}
+                    />
+                    <p className={styles.errors}>{errors.username}</p>
+                    <br></br>
+                    <label htmlFor="password">Password:</label>
+                    <input 
+                    id="password" 
+                    name="password"
+                    placeholder="Ingrese contraseña" 
+                    type="password" 
+                    value={userData.password} 
+                    onChange={handleInputChange}
+                    />
+                    <p className={styles.errors}>{errors.password}</p>
+                    <br></br>
+                    <button type="submit">LOGIN</button>
+                </form>
+            </div>
+    </>
     );
 }

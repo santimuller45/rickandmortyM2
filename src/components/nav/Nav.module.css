@@ -7,28 +7,19 @@
     height: 4vh;
     margin: 0%;
     background-color: yellow;
-}
-.home {
-    font-family: rickandmorty;
-    font-size: 30px;
-    color: black;
-}
-.about {
-    font-family: rickandmorty;
-    font-size: 30px;
-    color: black;
-}
-.fav {
     font-family: rickandmorty;
     font-size: 30px;
     color: black;
 }
 .fav:hover {
     color: red;
+    font-size: 40px;
 }
 .home:hover {
     color: red;
+    font-size: 40px;
 }
 .about:hover {
     color: red;
+    font-size: 40px;
 }

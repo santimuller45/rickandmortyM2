@@ -1,22 +1,23 @@
 .container {
-    display: flex;
-    justify-content: center;
+    display:inline-flex;
     align-items: center;
-    font-size: 40px;
+    justify-content: center;
+    height: 50vh;
+    width: 40vw;
+    font-size: 30px;
     color: yellow;
-    background-color: black;
-    padding: 1%;
-    margin: 1%;
+    background-color: transparent;
+    border-radius: 15%;
     font-family: rickandmorty;
     border: solid yellow;
 }
 .container button {
     position: absolute;
-    bottom: 50px;
-    left: 800px;
-    font-size: 50px;
-    height: 90px;
-    width: 400px;
+    bottom: 30%;
+    left: 43%;
+    font-size: 40px;
+    height: 9vh;
+    width: 15vw;
     border-radius: 70%;
     background-color: yellow;
     font-family: rickandmorty;
