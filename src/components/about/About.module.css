@@ -1,0 +1,17 @@
+.container {
+    text-align: center;
+    color: yellow;
+    font-size: 35px;
+}
+.title {
+    margin-top: 2%;
+    font-size: 80px;
+    font-family: rickandmorty;
+}
+.text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+}

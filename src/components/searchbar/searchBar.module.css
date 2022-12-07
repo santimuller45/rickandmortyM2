@@ -1,0 +1,18 @@
+.searchBar input {
+    border: solid;
+    background-color: yellow;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: fantasy;
+}
+.searchBar button {
+    background-color: yellow;
+    border: solid;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family:fantasy;
+}
+.searchBar button:hover {
+    color: red;
+    cursor: pointer;
+}

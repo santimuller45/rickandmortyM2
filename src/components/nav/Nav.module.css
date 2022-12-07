@@ -1,0 +1,34 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 97vw;
+    height: 4vh;
+    margin: 0%;
+    background-color: yellow;
+}
+.home {
+    font-family: rickandmorty;
+    font-size: 30px;
+    color: black;
+}
+.about {
+    font-family: rickandmorty;
+    font-size: 30px;
+    color: black;
+}
+.fav {
+    font-family: rickandmorty;
+    font-size: 30px;
+    color: black;
+}
+.fav:hover {
+    color: red;
+}
+.home:hover {
+    color: red;
+}
+.about:hover {
+    color: red;
+}

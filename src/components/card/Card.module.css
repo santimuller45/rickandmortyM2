@@ -1,0 +1,53 @@
+.card {
+    height: auto;
+    width: auto;
+}
+.cardImg {
+    height: auto;
+    border: solid;
+    margin: 0%;
+}
+.cardName {
+    position: absolute;
+    padding: 5%;
+    margin-bottom: 3%;
+    bottom: 200px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.cardClose {
+    position: absolute;
+    margin-left: 0%;
+    bottom: 68%;
+    font-size: 15px;
+    border: solid;
+    background-color: yellow;
+}
+.container{
+    color: yellow;
+    position: absolute;
+    margin-left: 6%;
+    bottom: 20%;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 20px;
+    font-family: rickandmorty;
+}
+.fav {
+    position: absolute;
+    bottom: 68%;
+    padding: 0%;
+    margin-left: 1.5%;
+}
+.cardClose:hover {
+    cursor: pointer;
+    background-color: red;
+}
+.card:hover .container {
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover {
+    box-shadow: 5px 5px 10px yellow;
+}

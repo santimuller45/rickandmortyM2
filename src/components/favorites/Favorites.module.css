@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img {
+    border: solid yellow;
+}
+.name {
+    color: yellow;
+    font-family: rickandmorty;
+    font-size: 30px;
+}
