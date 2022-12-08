@@ -9,13 +9,13 @@ function reducerFav(state = initialState, actions) {
         case ADD_FAV: {
             return {
                 ...state,
-                myFavorites: [...state.myFavorites, actions.payload]
+                allCharacters: [...state.allCharacters, actions.payload]
             }
         }
         case DELETE_FAV: {
             return {
                 ...state,
-                myFavorites: state.myFavorites.filter(char => (char.id !== actions.payload))
+                allCharacters: state.allCharacters.filter(char => (char.id !== actions.payload))
             }
         }
         case "FILTER": {

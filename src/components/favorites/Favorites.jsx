@@ -1,21 +1,15 @@
 import React from "react";
 import {connect} from "react-redux"
 import styles from "./Favorites.module.css"
-import Card from "../card/Card";
 
-function Favorites({myFavorites}) {
+function Favorites({allCharacters}) {
     return (
         <>
             <div className={styles.container}>
-                {myFavorites.map(char => (
+                {allCharacters.map(char => (
                     <div key={char.id}>
-                        <Card
-                            id = {char.id}
-                            name= {char.name}
-                            image= {char.image}
-                            gender= {char.gender}
-                            species= {char.species}
-                        />
+                        <img src={char.image} alt={char.id} className={styles.img}/>
+                        <div className={styles.name}>{char.name}</div>
                     </div>
                 ))}
             </div>
@@ -24,7 +18,7 @@ function Favorites({myFavorites}) {
 }
 export function mapStateToProps(state) {
     return {
-        myFavorites: state.myFavorites
+        allCharacters: state.allCharacters
     }
 }
 

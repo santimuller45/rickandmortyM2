@@ -19,12 +19,12 @@ function Card(props) {
    }
 
    useEffect(() => {
-      for (let i=0; i < props.myFavorites.length; i++) {
-         if(props.myFavorites[i].id === props.id){
+      for (let i=0; i < props.allCharacters.length; i++) {
+         if(props.allCharacters[i].id === props.id){
             setIsFav(true);
          }
       }
-   }, [props.myFavorites]);
+   }, [props.allCharacters]);
 
    return (
       <div className={styles.card}>
@@ -58,7 +58,7 @@ export function mapDispatchToProps(dispatch){
 
 export function mapStateToProps(state){
    return{
-      myFavorites: state.myFavorites
+      allCharacters: state.allCharacters
    }
 }
 
