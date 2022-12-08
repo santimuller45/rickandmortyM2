@@ -28,6 +28,7 @@ export default function Form({login}) {
 
     return (
         <>
+            <h2 className={styles.titleForm}>Please log in...</h2>
             <div className={styles.container}>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="username">Username:</label>

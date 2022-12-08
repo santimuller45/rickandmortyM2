@@ -41,8 +41,8 @@ function Card(props) {
             <h2 className={styles.cardName}>{props.name}</h2>
          </Link>
          <div className={styles.container}>
-            <h2>{props.species}</h2>
-            <h2>{props.gender}</h2>
+            <h2>Specie: {props.species}</h2>
+            <h2>Gender: {props.gender}</h2>
          </div>
       </div>
    );

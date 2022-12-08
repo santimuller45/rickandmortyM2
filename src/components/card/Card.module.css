@@ -27,7 +27,7 @@
 .container{
     color: yellow;
     position: absolute;
-    margin-left: 6%;
+    margin-left: 3%;
     bottom: 20%;
     visibility: hidden;
     opacity: 0;
@@ -52,6 +52,7 @@
     box-shadow: 5px 5px 10px yellow;
 }
 .cardName:hover{
-    color: red;
+    color: black;
     font-size: 27px;
+    font-family: rickandmorty;
 }
