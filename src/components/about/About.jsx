@@ -14,8 +14,7 @@ export default function About() {
                 <img src="https://images6.alphacoders.com/909/thumb-1920-909641.png" alt="rick" style={{width: "38vw", border:"solid yellow"}}/>
                 <p>
                     <h1>Bienvenido!</h1>
-                    Esta es una aplicación en desarrollo por estudiante de soyHenry para el aprendizaje e implementacion de nuevos conceptos de la libreria de "React"
-                    espero que les guste!
+                    Esta es una aplicación en desarrollo por Santiago Muller estudiante de soyHenry!
                 </p>
             </div>
         </div>
