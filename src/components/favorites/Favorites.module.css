@@ -11,3 +11,14 @@
     font-family: rickandmorty;
     font-size: 30px;
 }
+.selectores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
+}
+.id {
+    color: yellow;
+    font-size: 30px;
+    font-family: rickandmorty;
+}

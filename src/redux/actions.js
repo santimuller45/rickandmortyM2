@@ -15,10 +15,10 @@ export const deleteFav = (id) => {
     }
 }
 
-export const filterCards = (status) => {
+export const filterCards = (gender) => {
     return {
         type: "FILTER",
-        payload: status
+        payload: gender
     }
 }
 

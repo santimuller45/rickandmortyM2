@@ -9,25 +9,38 @@ function reducerFav(state = initialState, actions) {
         case ADD_FAV: {
             return {
                 ...state,
+                myFavorites: [...state.allCharacters, actions.payload],
                 allCharacters: [...state.allCharacters, actions.payload]
             }
         }
         case DELETE_FAV: {
             return {
                 ...state,
-                allCharacters: state.allCharacters.filter(char => (char.id !== actions.payload))
+                myFavorites: state.myFavorites.filter(char => (char.id !== actions.payload))
             }
         }
         case "FILTER": {
+            const filteredChar = state.allCharacters.filter(char => char.gender === actions.payload);
             return {
                 ...state,
-                myFavorites: [{...state.allCharacters}].filter((element) => element.gender === actions.payload)
+                myFavorites: filteredChar
             }
         }
         case "ORDER": {
+            const orderChar = state.allCharacters.sort((elemA,elemB) => {
+                if(actions.payload === "Ascendente") {
+                    if(elemA.id < elemB.id) return -1;
+                    if(elemB.id < elemA.id) return 1;
+                    return 0;
+                } else {
+                    if(elemA.id < elemB.id) return 1;
+                    if(elemB.id < elemA.id) return -1;
+                    return 0;
+                }
+            })
             return {
                 ...state,
-                myFavorites: [{...state.allCharacters}].sort((elementA, elementB) => actions.payload === "Ascendente" ? elementA.id - elementB.id : elementB.id - elementA.id)
+                myFavorites: [...orderChar]
             }
         }
         default:
